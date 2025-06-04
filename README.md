@@ -354,7 +354,7 @@ docker run --rm --privileged multiarch/qemu-user-static:register --reset
 Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64`.
 
 ## Versions
-
+* **05.06.25:** - Update.
 * **01.01.24:** - Deprecate.
 * **05.09.23:** - Add deprecation warning as per [https://info.linuxserver.io/issues/2023-09-06-unifi-controller](https://info.linuxserver.io/issues/2023-09-06-unifi-controller).
 * **04.09.23:** - Bump JRE to 17 to support v7.5.
