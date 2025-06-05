@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: read
+      contents: write
       packages: write # Required to push to GHCR
 
     steps:
@@ -33,7 +33,7 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/starbuggx/docker-unifi-controller:latest
+            ghcr.io/starbuggx/docker-unifi:latest
 
       - name: Build and push Docker image from other branches
         if: github.ref_name != 'master'
@@ -43,5 +43,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/starbuggx/docker-unifi-controller:${{ github.ref_name }}
+            ghcr.io/starbuggx/docker-unifi:${{ github.ref_name }}
           
