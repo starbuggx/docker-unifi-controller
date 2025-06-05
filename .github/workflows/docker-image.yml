@@ -33,7 +33,7 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/starbuggx/docker-unifi:latest
+            ghcr.io/starbuggx/docker-unifi-controller:latest
 
       - name: Build and push Docker image from other branches
         if: github.ref_name != 'master'
